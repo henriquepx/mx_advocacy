@@ -15,13 +15,13 @@ const GlobalStyle = createGlobalStyle`
   line-height: 1.4;
   ::-webkit-scrollbar {
     width: 5px; 
-}
-::-webkit-scrollbar-thumb {
-    background-color: #000000;
-}
-::-webkit-scrollbar-track {
-    background-color: #ff0000; 
-}
+  }
+  ::-webkit-scrollbar-thumb {
+      background-color: #690202;
+  }
+  ::-webkit-scrollbar-track {
+      background-color: #b3b3b3; 
+  }
 }
 
   /* 
