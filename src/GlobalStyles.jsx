@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const primaryColor = "#800101";
+export const primaryColor = "rgb(128, 1, 1)";
 export const fontPrimary = 'Montserrat, sans-serif';
 
 const GlobalStyle = createGlobalStyle`
