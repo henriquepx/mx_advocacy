@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+export const primaryColor = "#690202";
+
 const GlobalStyle = createGlobalStyle`
   * {
   margin: 0;

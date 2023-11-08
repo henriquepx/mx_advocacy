@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { primaryColor } from '../GlobalStyles';
 
 const ContainerFooter = styled.div`
-    background-color: #690202;
+    background-color: ${primaryColor};
     height: 50vh;
     width: 100%;
 `

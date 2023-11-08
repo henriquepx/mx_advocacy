@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { primaryColor } from '../GlobalStyles';
 
 const ContainerHeader = styled.header`
-    background-color: #690202;
+    background-color: ${primaryColor};
     height: 10vh;
     width: 100%;
 `
