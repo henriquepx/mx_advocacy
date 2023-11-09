@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import { primaryColor } from '../../GlobalStyles';
 
 const ContainerPrincipalPage = styled.main`
   background-color: #fff;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   position: relative;
+
+  background: url('/bgmain.jpg') center center no-repeat, linear-gradient(90deg, rgba(126,1,1,1) 43%, rgba(158,65,65,1) 64%, rgba(255,255,255,1) 100%);
+  background-size: cover;
 `;
 
 const TabContent = styled.div`  
@@ -44,8 +46,8 @@ const TabSpan = styled.span`
   width: 13px;
   height: 13px;
   background-color: ${({ active }) =>
-    active ? `${primaryColor}` : '#ffffff'};
-  border: 2px solid ${primaryColor};
+    active ? ` #ffffff` : '${primaryColor}'};
+  border: 2px solid #fff;
   border-radius: 100%;
   cursor: pointer;
 `;
