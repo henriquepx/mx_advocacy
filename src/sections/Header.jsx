@@ -64,7 +64,7 @@ const Header = () => {
           <span></span>
         </MenuHamburger>
         <Title>MX Advocacia</Title>  
-        <Consultoria href="#">Pedir consultoria →</Consultoria>
+        <Consultoria href="#">Contato →</Consultoria>
       </SizeHeader>
     </ContainerHeader>
   );

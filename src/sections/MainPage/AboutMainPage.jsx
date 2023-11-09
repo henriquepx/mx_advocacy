@@ -16,7 +16,7 @@ const TextAboutMainPage = styled.div`
   position: relative;
   z-index: 100;
   left: 0;
-  width: 47%;
+  width: 49%;
   height: 55%;
   background-color: #ffffff;
 `;
