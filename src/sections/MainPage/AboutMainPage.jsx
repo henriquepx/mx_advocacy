@@ -10,14 +10,14 @@ const ContainerAboutMainPage = styled.div`
 const ImgAboutMainPage = styled.img`
   position: absolute;
   right: 0;
-  height: 45%;
+  height: 50%;
 `;
 const TextAboutMainPage = styled.div`
   position: relative;
   z-index: 100;
   left: 0;
-  width: 55%;
-  height: 35%;
+  width: 47%;
+  height: 55%;
   background-color: #ffffff;
 `;
 const TextsAbout = styled.div`
@@ -30,19 +30,18 @@ const TextsAbout = styled.div`
     color: ${primaryColor};
     font-weight: 700;
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
   p {
     max-width: 50ch;
-    margin-bottom: .2rem;
+    margin-bottom: .4rem;
     &:last-of-type {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
   }
   a {
     margin-top: 2rem;
     font-family: ${fontPrimary};
-    text-transform: uppercase;
     position: relative;
     color: ${primaryColor};
     font-weight: 500;
@@ -81,10 +80,11 @@ const AboutMainPage = () => {
     <ContainerAboutMainPage>
       <TextAboutMainPage>
         <TextsAbout>
-            <h2>Quem somos</h2>  
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt dolorum odio repellendus accusamus veritatis atque praesentium architecto eveniet illum!</p>      
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ullam qui quia temporibus architecto porro.</p>
-            <a href="#">Ver mais sobre</a>
+          <h2>⚖️ Quem somos</h2>  
+          <p>A Monteiro Xavier Advocacia é liderada pela Dras. Lívia Monteiro e Evangelina Xavier que unirão suas expertíses para criar um escritório com visão humanizada com o objetivo de fornecer a seus clientes mais do que apenas orientação legal.</p>      
+          <p>Nossa equipe compreende as preocupações de nossos clientes está pronta para ser seu parceiro estratégico.</p>
+          <p>Do planejamento previdenciário, as questões de cláusulas contratuais e ao Direito de família e sucessões estamos comprometidas em ser sua linha de defesa para que tenha proteção, crescimento e prosperidade.</p>
+          <a href="#">Ver mais sobre</a>
         </TextsAbout>
       </TextAboutMainPage>
       <ImgAboutMainPage src="/bg2.jpg" alt="" />

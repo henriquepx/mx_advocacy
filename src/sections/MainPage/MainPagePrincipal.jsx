@@ -7,9 +7,6 @@ const ContainerPrincipalPage = styled.main`
   height: 70vh;
   width: 100%;
   position: relative;
-
-  background: url('/bgmain.jpg') center center no-repeat, linear-gradient(90deg, rgba(126,1,1,1) 43%, rgba(158,65,65,1) 64%, rgba(255,255,255,1) 100%);
-  background-size: cover;
 `;
 
 const TabContent = styled.div`  
@@ -18,6 +15,7 @@ const TabContent = styled.div`
 `;
 
 const TabItem = styled.div`
+  height: 70vh;
   width: 100%;
   transition: opacity 0.3s, padding 0.3s;
   display: ${({ active }) => (active ? 'block' : 'none')};
@@ -38,12 +36,20 @@ const TabItem = styled.div`
 `;
 
 const Content1 = styled(TabItem)`
+  background: url('/bgmain2.jpg') center center no-repeat;
+  background-size: cover;
 `;
 const Content2 = styled(TabItem)`
+  background: url('/bgmain.jpg') center center no-repeat;
+  background-size: cover;
 `;
 const Content3 = styled(TabItem)`
+  background: url('/bgmain4.jpg') center center no-repeat;
+  background-size: cover;
 `;
 const Content4 = styled(TabItem)`
+  background: url('/bgmain3.jpg') center center no-repeat;
+  background-size: cover;
 `;
 
 const TabMenu = styled.div`
@@ -79,7 +85,7 @@ const MainPagePrincipal = () => {
     <ContainerPrincipalPage>
       <TabContent>
         <Content1 active={activeTab === 0}>
-            <h2>Lorem, ipsum dolor.</h2>
+            <h2>Lorem ipsum dolor sit.</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptate officia nulla quis architecto consectetur quasi distinctio ducimus quae iusto!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quibusdam fuga beatae, odio natus molestias culpa at perferendis nam doloremque et adipisci deleniti nulla eveniet! Maxime beatae iste nesciunt culpa.</p>
         </Content1>
