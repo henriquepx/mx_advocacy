@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import { fontPrimary } from '../../GlobalStyles';
 
 const ContainerPrincipalPage = styled.main`
   background-color: #fff;
@@ -18,7 +19,22 @@ const TabContent = styled.div`
 
 const TabItem = styled.div`
   width: 100%;
+  transition: opacity 0.3s, padding 0.3s;
   display: ${({ active }) => (active ? 'block' : 'none')};
+
+  padding: ${({ active }) => (active ? '12rem 0rem 0rem 12rem' : '0')};
+  opacity: ${({ active }) => (active ? '1' : '0')};
+  h2 {
+    font-family: ${fontPrimary};
+    color: #fff;
+    font-size: 3.3rem;
+  }
+  p {
+    max-width: 60ch;
+    font-family: ${fontPrimary};
+    color: #fff;
+    margin: 10px 0;
+  }
 `;
 
 const Content1 = styled(TabItem)`
@@ -63,20 +79,24 @@ const MainPagePrincipal = () => {
     <ContainerPrincipalPage>
       <TabContent>
         <Content1 active={activeTab === 0}>
-            <h2>Conteúdo da Aba 1</h2>
-            <p>Este é o conteúdo da primeira aba.</p>
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptate officia nulla quis architecto consectetur quasi distinctio ducimus quae iusto!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quibusdam fuga beatae, odio natus molestias culpa at perferendis nam doloremque et adipisci deleniti nulla eveniet! Maxime beatae iste nesciunt culpa.</p>
         </Content1>
         <Content2 active={activeTab === 1}>
-          <h2>Conteúdo da Aba 2</h2>
-          <p>Este é o conteúdo da segunda aba.</p>
+        <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quibusdam fuga beatae, odio natus molestias culpa at perferendis nam doloremque et adipisci deleniti nulla eveniet! Maxime beatae iste nesciunt culpa.</p>
         </Content2>
         <Content3 active={activeTab === 2}>
-          <h2>Conteúdo da Aba 3</h2>
-          <p>Este é o conteúdo da terceira aba.</p>
+        <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptate officia nulla quis architecto consectetur quasi distinctio ducimus quae iusto!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quibusdam fuga beatae, odio natus molestias culpa at perferendis nam doloremque.</p>
         </Content3>
         <Content4 active={activeTab === 3}>
-          <h2>Conteúdo da Aba 4</h2>
-          <p>Este é o conteúdo da quarta aba.</p>
+        <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptate officia nulla quis architecto consectetur quasi distinctio ducimus quae iusto!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quibusdam fuga beatae, odio natus molestias culpa at perferendis nam doloremque et adipisci deleniti nulla eveniet! Maxime beatae iste nesciunt culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, iusto quis nam voluptatem temporibus sequi!</p>
         </Content4>
       </TabContent>
       <TabMenu>
