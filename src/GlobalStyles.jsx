@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const primaryColor = "rgb(128, 1, 1)";
+export const primaryColor = "rgb(0, 0, 0)";
 export const fontPrimary = 'Montserrat, sans-serif';
 
 const GlobalStyle = createGlobalStyle`
@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     width: 5px; 
   }
   ::-webkit-scrollbar-thumb {
-      background-color: #690202;
+      background-color: #5e0000;
   }
   ::-webkit-scrollbar-track {
       background-color: #b3b3b3; 
