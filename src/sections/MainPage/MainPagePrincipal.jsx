@@ -15,7 +15,6 @@ const MainContent1 = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   &:hover {
     width: 80%;
   }
@@ -31,12 +30,11 @@ const ImgContainerMain1 = styled.img`
 `
 const MainContent2 = styled.div`
   transition: all 0.3s ease;
-  background-color: #b40000;
+  background-color: #d40404;
   width: 50%;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   &:hover {
     width: 80%;
   }
@@ -45,12 +43,12 @@ const DescriptionContentMain2 = styled.div`
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding: 0rem 5rem;
+  padding: 0rem 0rem 0rem 10rem;
 `
 const TitleContentMain = styled.h1`
   font-family: ${fontPrimary};
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
 `
 const DescriptionContent1 = styled.p`
   max-width: 50ch;
