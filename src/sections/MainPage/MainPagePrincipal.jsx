@@ -15,6 +15,7 @@ const MainContent1 = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   &:hover {
     width: 80%;
   }
@@ -23,11 +24,11 @@ const DescriptionContentMain1 = styled.div`
   text-align: right;
   display: flex;
   flex-direction: column;
-  padding: 0rem 5rem;
 `
 const ImgContainerMain1 = styled.img`
   width: 30%;
 `
+
 const MainContent2 = styled.div`
   transition: all 0.3s ease;
   background-color: #d40404;
@@ -35,6 +36,7 @@ const MainContent2 = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   &:hover {
     width: 80%;
   }
@@ -43,8 +45,8 @@ const DescriptionContentMain2 = styled.div`
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding: 0rem 0rem 0rem 10rem;
 `
+
 const TitleContentMain = styled.h1`
   font-family: ${fontPrimary};
   color: #fff;
@@ -58,6 +60,7 @@ const DescriptionContent2 = styled.p`
   max-width: 50ch;
   text-align: left;
 `
+
 const ButtonContent = styled.a`
   padding: .9rem 1.4rem;
   background-color: #fff;
