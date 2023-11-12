@@ -3,6 +3,7 @@ import Footer from '../sections/Footer';
 import Header from '../sections/Header';
 import MainPagePrincipal from '../sections/MainPage/MainPagePrincipal';
 import AboutMainPage from '../sections/MainPage/AboutMainPage';
+import Areas from '../sections/MainPage/Areas';
 
 const ContainerMainPage = styled.div`
 
@@ -14,6 +15,7 @@ const MainPage = () => {
         <Header />
         <MainPagePrincipal />
         <AboutMainPage />
+        <Areas />
         <Footer />
       </ContainerMainPage>
   )

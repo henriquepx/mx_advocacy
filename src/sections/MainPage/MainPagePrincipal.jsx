@@ -1,68 +1,53 @@
 import styled from 'styled-components';
 import { fontPrimary, primaryColor } from '../../GlobalStyles';
 
-const ContainerPrincipalPage = styled.main`
+const Container = styled.main`
   background-color: #fff;
   height: 70vh;
   width: 100%;
   display: flex;
 `;
 
-const MainContent1 = styled.div`
+const MainContent = styled.div`
   transition: all 0.3s ease;
-  background-color: #660000;
-  width: 50%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50%;
+  background-color: ${props => props.backgroundColor};
   &:hover {
     width: 80%;
   }
 `;
-const DescriptionContentMain1 = styled.div`
-  text-align: right;
+
+const DescriptionContent = styled.div`
   display: flex;
   flex-direction: column;
-`
-const ImgContainerMain1 = styled.img`
+`;
+
+const TextContainer = styled.div`
+  text-align: ${props => (props.align === 'right' ? 'right' : 'left')};
+`;
+
+const ImgContainer = styled.img`
   width: 30%;
-`
-
-const MainContent2 = styled.div`
-  transition: all 0.3s ease;
-  background-color: #d40404;
-  width: 50%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:hover {
-    width: 80%;
-  }
 `;
-const DescriptionContentMain2 = styled.div`
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-`
 
-const TitleContentMain = styled.h1`
+const Title = styled.h1`
   font-family: ${fontPrimary};
   color: #fff;
   font-size: 2rem;
-`
-const DescriptionContent1 = styled.p`
-  max-width: 50ch;
-  margin-left: auto;
-`
-const DescriptionContent2 = styled.p`
-  max-width: 50ch;
-  text-align: left;
-`
+`;
 
-const ButtonContent = styled.a`
-  padding: .9rem 1.4rem;
+const Description = styled.p`
+  max-width: 50ch;
+  margin-left: 0;
+  text-align: ${props => (props.align === 'left' ? 'left' : 'right')};
+`;
+
+const Button = styled.a`
+  padding: 0.9rem 1.4rem;
   background-color: #fff;
   color: ${primaryColor};
   font-family: ${fontPrimary};
@@ -70,27 +55,32 @@ const ButtonContent = styled.a`
   max-width: 159px;
   margin-left: ${props => (props.align === 'right' ? 'auto' : '0')};
   margin-right: ${props => (props.align === 'left' ? 'auto' : '0')};
-`
+`;
+
 const MainPagePrincipal = () => {
   return (
-    <ContainerPrincipalPage>
-      <MainContent1>
-        <ImgContainerMain1 src="png1.png" alt="Imagem 1" />
-        <DescriptionContentMain1>
-          <TitleContentMain>Lorem, ipsum dolor.</TitleContentMain>
-          <DescriptionContent1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim itaque corporis, perspiciatis vero corrupti obcaecati est quo aspernatur reiciendis?</DescriptionContent1>
-          <ButtonContent align="right">Conheça mais</ButtonContent>
-        </DescriptionContentMain1>
-      </MainContent1>
-      <MainContent2>
-        <DescriptionContentMain2>
-          <TitleContentMain>Lorem, ipsum dolor.</TitleContentMain>
-          <DescriptionContent2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta vero architecto ea reiciendis earum unde fugit odio!</DescriptionContent2>
-          <ButtonContent align="left">Conheça mais</ButtonContent>
-        </DescriptionContentMain2>
-        <ImgContainerMain1 src="png2.png" alt="Imagem 2" />
-      </MainContent2>
-    </ContainerPrincipalPage>
+    <Container>
+      <MainContent backgroundColor="#d40404">
+        <ImgContainer src="png1.png" alt="Imagem 1" />
+        <DescriptionContent>
+          <TextContainer align="right">
+            <Title>Advocacia para mulheres.</Title>
+            <Description align="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim itaque corporis, perspiciatis vero corrupti obcaecati est quo aspernatur reiciendis?</Description>
+          </TextContainer>
+          <Button align="right">Conheça mais</Button>
+        </DescriptionContent>
+      </MainContent>
+      <MainContent backgroundColor="#660000">
+        <DescriptionContent>
+          <TextContainer align="left">
+            <Title>Advocacia para empresas.</Title>
+            <Description align="left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta vero architecto ea reiciendis earum unde fugit odio!</Description>
+          </TextContainer>
+          <Button align="left">Conheça mais</Button>
+        </DescriptionContent>
+        <ImgContainer src="png2.png" alt="Imagem 2" />
+      </MainContent>
+    </Container>
   );
 };
 
