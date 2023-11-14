@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { primaryColor, fontPrimary } from '../../GlobalStyles';
 
 const ContainerAboutMainPage = styled.div`
-  height: 80vh;
+  height: 65vh;
   display: flex;
   align-items: center;
 `;
@@ -16,20 +16,20 @@ const TextAboutMainPage = styled.div`
   position: relative;
   z-index: 100;
   left: 0;
-  width: 49%;
-  height: 55%;
+  width: 47%;
+  height: 65%;
   background-color: #ffffff;
 `;
 const TextsAbout = styled.div`
   position: absolute;
   right: 0;
   text-align: left;
-  padding: 2rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   h2 {
     font-family: ${fontPrimary};
-    color: ${primaryColor};
-    font-weight: 700;
+    color: #000;
     font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 1rem;
   }
   p {
