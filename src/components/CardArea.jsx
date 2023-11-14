@@ -59,37 +59,18 @@ const BlogCard = styled.div`
       line-height: 1;
       margin: 0;
       font-size: 1.7rem;
+      margin-bottom: .5rem;
     }
-
     h2 {
-      font-size: 1rem;
-      font-weight: 300;
-      text-transform: uppercase;
-      color: #a2a2a2;
-      margin-top: 5px;
-    }
-  }
-
-  p {
-    position: relative;
-    margin: 1rem 0 0;
-    margin-top: 1.25rem;
-
-    &:before {
-      content: "";
-      position: absolute;
-      height: 5px;
-      background: #5ad67d;
-      width: 35px;
-      top: -0.75rem;
-      border-radius: 3px;
+      margin-bottom: 1.5rem;
     }
   }
 
   @media (min-width: 640px) {
     flex-direction: row;
+    width: 650px;
     max-width: 570px;
-    height: 280px;
+    height: 300px;
 
     .meta {
       flex-basis: 55%;
@@ -114,7 +95,7 @@ const BlogCard = styled.div`
   }
 `;
 
-const CardArea = ({ backgroundImage, title, subtitle, content }) => {
+const CardArea = ({ backgroundImage, title, subtitle, content, content2, content3, content4, content5, content6 }) => {
   return (
     <ContainerAreaAtuacao>
       <BlogCard>
@@ -130,6 +111,11 @@ const CardArea = ({ backgroundImage, title, subtitle, content }) => {
           <h1>{title}</h1>
           <h2>{subtitle}</h2>
           <p>{content}</p>
+          <p>{content2}</p>
+          <p>{content3}</p>
+          <p>{content4}</p>
+          <p>{content5}</p>
+          <p>{content6}</p>
         </div>
       </BlogCard>
     </ContainerAreaAtuacao>
@@ -141,6 +127,11 @@ CardArea.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
+    content2: PropTypes.string.isRequired,
+    content3: PropTypes.string.isRequired,
+    content4: PropTypes.string.isRequired,
+    content5: PropTypes.string.isRequired,
+    content6: PropTypes.string.isRequired,
   };
 
 export default CardArea;

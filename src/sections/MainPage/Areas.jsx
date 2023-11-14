@@ -34,26 +34,31 @@ const Areas = () => {
               backgroundImage="/empresarial.jpeg"
               title="Direito Empresarial"
               subtitle="Opening a door to the future"
-              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit."
-          />
+              content="> Contratos e Negociações"
+              content2="> Assessoria Estratégica"/>
           <CardArea
               backgroundImage="/previdencia.jpg"
               title="Direito Previdenciário"
               subtitle="Opening a door to the future"
-              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit."
-          />
+              content="> Regime Próprio / Militar"
+              content2="> Regime Geral / INSS"
+              content3="> Planejamento Previdenciário" />
           <CardArea
               backgroundImage="/familia.jpeg"
               title="Direito das Famílias"
-              subtitle="Opening a door to the future"
-              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit."
-          />
+              content="> Inventário"
+              content2="> Regularização de bens imóveis"
+              content3="> Planejamento sucessório"
+              content4="> Divórcio"
+              content5="> Alimentos"
+              content6="> União / Dissolução de União Estável"/>
           <CardArea
               backgroundImage="/bgabout.jpg"
               title="Direito Humanizado"
               subtitle="Opening a door to the future"
-              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit."
-            />
+              content="> Mediação familiar"
+              content2="> Mediação de conflitos"
+              content3="> Divórcio humanizado"/>
           </ContainerCardAreas>
         </AreasWorkedSize>
     </ContainerAreasWorked>
