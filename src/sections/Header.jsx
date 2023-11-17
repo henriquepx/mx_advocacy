@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import { useState } from 'react';
 import { primaryColor, fontPrimary } from '../GlobalStyles';
 import { FaInstagram, FaWhatsapp, FaSearch } from 'react-icons/fa';
+import Menu from '../pages/Menu';
 
 const ContainerHeader = styled.header`
   background-color: ${primaryColor};
@@ -122,6 +124,14 @@ const MenuHamburger = styled.div`
 `;
 
 const Header = () => {
+
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+
   return (
     <ContainerHeader>
       <SizeHeader>
@@ -148,13 +158,14 @@ const Header = () => {
           <Title>MX Advocacia</Title>
           <SeparateMenuSearch>
             <a href="#"><FaSearch style={{ color: '#ffffff', fontSize: '20px' }} /></a>
-            <MenuHamburger>
+            <MenuHamburger onClick={handleMenuClick}>
               <span></span>
               <span></span>
               <span></span>
               <span></span>
             </MenuHamburger>
           </SeparateMenuSearch>
+          {isMenuOpen && <Menu />}
         </ContentHeader2>
 
       </SizeHeader>

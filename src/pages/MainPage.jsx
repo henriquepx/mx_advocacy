@@ -5,6 +5,7 @@ import MainPagePrincipal from '../sections/MainPage/MainPagePrincipal';
 import AboutMainPage from '../sections/MainPage/AboutMainPage';
 import Areas from '../sections/MainPage/Areas';
 import { Consulting } from '../components/Consulting';
+
 const ContainerMainPage = styled.div`
 
 `
