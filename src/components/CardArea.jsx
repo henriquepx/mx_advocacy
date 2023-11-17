@@ -64,6 +64,9 @@ const BlogCard = styled.div`
     h2 {
       margin-bottom: 1.5rem;
     }
+    p {
+      font-size: .5rem;
+    }
   }
 
   @media (min-width: 640px) {
@@ -78,7 +81,7 @@ const BlogCard = styled.div`
     }
 
     .description {
-      flex-basis: 45%;
+      flex-basis: 65%;
 
       &:before {
         transform: skewX(-3deg);
@@ -94,6 +97,10 @@ const BlogCard = styled.div`
     }
   }
 `;
+const LinkToKnowMoreArea = styled.a`
+  position: absolute;
+  bottom: 5%;
+`
 
 const CardArea = ({ backgroundImage, title, subtitle, content, content2, content3, content4, content5, content6 }) => {
   return (
@@ -116,6 +123,7 @@ const CardArea = ({ backgroundImage, title, subtitle, content, content2, content
           <p>{content4}</p>
           <p>{content5}</p>
           <p>{content6}</p>
+          <LinkToKnowMoreArea>link to</LinkToKnowMoreArea>
         </div>
       </BlogCard>
     </ContainerAreaAtuacao>

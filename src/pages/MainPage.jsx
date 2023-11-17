@@ -5,8 +5,6 @@ import MainPagePrincipal from '../sections/MainPage/MainPagePrincipal';
 import AboutMainPage from '../sections/MainPage/AboutMainPage';
 import Areas from '../sections/MainPage/Areas';
 import { Consulting } from '../components/Consulting';
-import { Team } from '../sections/MainPage/Team';
-
 const ContainerMainPage = styled.div`
 
 `
@@ -19,7 +17,6 @@ const MainPage = () => {
         <AboutMainPage />
         <Areas />
         <Consulting />
-        <Team />
         <Footer />
       </ContainerMainPage>
   )

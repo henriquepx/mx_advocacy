@@ -47,6 +47,7 @@ const Areas = () => {
           <CardArea
               backgroundImage="/familiacolor.jpeg"
               title="Direito das Famílias"
+              subtitle="Opening a door to the future"
               content="> Inventário"
               content2="> Regularização de bens imóveis"
               content3="> Planejamento sucessório"
