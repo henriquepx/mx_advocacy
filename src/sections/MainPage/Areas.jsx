@@ -31,20 +31,20 @@ const Areas = () => {
           <TitleArea>Areás de atuação</TitleArea>
           <ContainerCardAreas>
             <CardArea
-              backgroundImage="/empresarial.jpeg"
+              backgroundImage="/empresarialcolor.jpeg"
               title="Direito Empresarial"
               subtitle="Opening a door to the future"
               content="> Contratos e Negociações"
               content2="> Assessoria Estratégica"/>
           <CardArea
-              backgroundImage="/previdencia.jpg"
+              backgroundImage="/previdenciacolor.jpg"
               title="Direito Previdenciário"
               subtitle="Opening a door to the future"
               content="> Regime Próprio / Militar"
               content2="> Regime Geral / INSS"
               content3="> Planejamento Previdenciário" />
           <CardArea
-              backgroundImage="/familia.jpeg"
+              backgroundImage="/familiacolor.jpeg"
               title="Direito das Famílias"
               content="> Inventário"
               content2="> Regularização de bens imóveis"
@@ -53,7 +53,7 @@ const Areas = () => {
               content5="> Alimentos"
               content6="> União / Dissolução de União Estável"/>
           <CardArea
-              backgroundImage="/bgabout.jpg"
+              backgroundImage="/bgaboutcoor.jpg"
               title="Direito Humanizado"
               subtitle="Opening a door to the future"
               content="> Mediação familiar"

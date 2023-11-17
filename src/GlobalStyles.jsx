@@ -1,10 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const primaryColor = "#000000";
-export const magentaColor1 = "#5E0000";
-export const magentaColor2 = "#964040";
-export const magentaColor3 = "#C26D6D";
-export const magentaColor4 = "#FFD3D3";
 export const fontPrimary = 'Montserrat, sans-serif';
 
 const GlobalStyle = createGlobalStyle`
