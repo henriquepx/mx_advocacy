@@ -16,7 +16,7 @@ const TextAboutMainPage = styled.div`
   position: relative;
   z-index: 100;
   left: 0;
-  width: 47%;
+  width: 43%;
   height: 65%;
   background-color: #ffffff;
 `;
@@ -24,7 +24,7 @@ const TextsAbout = styled.div`
   position: absolute;
   right: 0;
   text-align: left;
-  padding: 1.2rem 1.5rem;
+  padding: 1.5rem 3rem;
   h2 {
     font-family: ${fontPrimary};
     color: #000;

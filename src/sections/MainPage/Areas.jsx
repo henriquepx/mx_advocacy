@@ -22,6 +22,7 @@ const ContainerCardAreas = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  margin-bottom: 1.5rem;
 `
 
 const Areas = () => {
