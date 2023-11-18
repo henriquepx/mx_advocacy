@@ -165,7 +165,7 @@ const Header = () => {
               <span></span>
             </MenuHamburger>
           </SeparateMenuSearch>
-          {isMenuOpen && <Menu />}
+          {isMenuOpen && <Menu isOpen={isMenuOpen} />}
         </ContentHeader2>
 
       </SizeHeader>
