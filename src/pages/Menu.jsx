@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
+import { FaHome, FaUser, FaBriefcase, FaEnvelope } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import { fontPrimary } from '../GlobalStyles';
 
@@ -33,28 +34,46 @@ const MenuHamburgerContainer = styled.div`
     margin-bottom: 2rem;
   }
 `;
+const NavegationMenu = styled.nav`
+  ul {
+    li {
+      font-family: ${fontPrimary};
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+`
 
 const Menu = ({ isOpen }) => {
   return (
-    <MenuHamburgerContainer isOpen={isOpen}>
-      <h1>MX Advocacia</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/profissionais">Profissionais</Link>
-          </li>
-          <li>
-            <Link to="/areasatuacao">Áreas de Atuação</Link>
-          </li>
-          <li>
-            <Link to="/contato">Contato</Link>
-          </li>
-        </ul>
-      </nav>
-    </MenuHamburgerContainer>
+<MenuHamburgerContainer isOpen={isOpen}>
+  <h1>MX Advocacia</h1>
+  <NavegationMenu>
+    <ul>
+      <li>
+        <Link to="/">
+          <FaHome style={{ color: '#795a51' }} /> Home
+        </Link>
+      </li>
+      <li>
+        <Link to="/profissionais">
+          <FaUser style={{color: '#795a51' }} /> Profissionais
+        </Link>
+      </li>
+      <li>
+        <Link to="/areasatuacao">
+          <FaBriefcase style={{ color: '#795a51' }} /> Áreas de Atuação
+        </Link>
+      </li>
+      <li>
+        <Link to="/contato">
+          <FaEnvelope style={{ color: '#795a51' }} /> Contato
+        </Link>
+      </li>
+    </ul>
+  </NavegationMenu>
+</MenuHamburgerContainer>
   );
 };
 
